@@ -1,5 +1,5 @@
 # Nics Easy Rules  简易规则引擎（基于easy-rules）
-一个简单的规则引擎工具，适合判断条件比较多的项目使用，尤其是那种如果满足条件，则会执行一堆业务逻辑或者校验很频繁的业务场景。
+基于[easy-rules](https://github.com/j-easy/easy-rules)改进开发的一个简单的规则引擎工具，适合判断条件比较多的项目使用，尤其是那种如果满足条件，则会执行一堆业务逻辑或者校验很频繁的业务场景。使用规则引擎可以解耦条件判断执行，让主业务方法看起来更清晰，维护起来也更容易。
 
 ## 名词解释
 - **最小规则(Rule)**： 最基础的规则，包含条件（condition）和执行（action），可能存在复用
@@ -79,7 +79,7 @@ public class EntryInvoiceGroupRules extends AbstractGroupRules {
     }
 }
 ```
-然后在resources/rules下面创建规则组配置文件
+然后在resources/rules下面创建规则组配置文件，注意name就是bean的名称。通过配置文件的形式，可以动态进行规则的配置，无需修改代码。
 ```yaml
 group:
   name: entryInvoiceGroupRules
