@@ -14,7 +14,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>cn.mmy</groupId>
+            <groupId>com.github.selwynshen</groupId>
             <artifactId>nics-easy-rules-core</artifactId>
             <version>${parent.version}</version>
         </dependency>

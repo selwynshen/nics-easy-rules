@@ -41,6 +41,19 @@
         <maven-enforcer-plugin.version>1.4.1</maven-enforcer-plugin.version>
     </properties>
 
+    <scm>
+        <url>https://github.com/selwynshen/nics-easy-rules</url>
+        <connection>https://github.com/selwynshen/nics-easy-rules.git</connection>
+        <developerConnection>https://github.com/selwynshen</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>Selwyn Shen</name>
+            <email>selwynshen@gmail.com</email>
+        </developer>
+    </developers>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
