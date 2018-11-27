@@ -27,11 +27,11 @@ public class AdvFacts extends Facts{
 
     /**
      * 放置结束
-     * @param param
+     * @param flag true: end  false: not to end
      * @param <T>
      */
-    public <T> void putEnd(T param)
+    public <T> void putEnd(boolean flag)
     {
-        put(FACTS_END_KEY, param);
+        put(FACTS_END_KEY, flag);
     }
 }
