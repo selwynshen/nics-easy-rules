@@ -8,7 +8,7 @@
         <version>7</version>
     </parent>
 
-    <groupId>cn.mmy</groupId>
+    <groupId>com.github.selwynshen</groupId>
     <artifactId>nics-easy-rules</artifactId>
     <version>1.0-SNAPSHOT</version>
 
