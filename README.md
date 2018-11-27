@@ -52,14 +52,14 @@ nics.easyrules.rules-locations=classpath:rules/*-rules.yml
 @Component
 @Scope("prototype")
 public class OrgNotExistRule extends AbstractRule {
-    //condition注解，表名这是一个条件方法，如果返回true，则执行下面action
+    //condition注解，表明这是一个条件方法，如果返回true，则执行下面action
     @Condition
     public boolean condition(AdvFacts facts)
     {
         return RandomUtils.nextBoolean();
     }
 
-    //action注解，表名这是一个执行方法，如果上面condition返回true，则执行该方法
+    //action注解，表明这是一个执行方法，如果上面condition返回true，则执行该方法
     @Action
     public void action(AdvFacts facts)
     {
