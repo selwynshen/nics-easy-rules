@@ -1,6 +1,12 @@
 # Nics Easy Rules  简易规则引擎（基于easy-rules）
 一个简单的规则引擎工具，适合判断条件比较多的项目使用，尤其是那种如果满足条件，则会执行一堆业务逻辑或者校验很频繁的业务场景。
 
+## 核心思路
+最小规则(Rule)： 最基础的规则，包含条件（condition）和执行（action），可能存在复用
+规则组(GroupRule)：最小规则的集合，用于完成一个业务逻辑的校验执行，内置Rules对象，用于最小规则的注册
+规则引擎(RulesEngine): 执行具体规则
+具体业务逻辑(Service)：由多个规则组组成
+
 ## 项目依赖
 ```xml
 <!--nics-easy-rules-->
@@ -70,7 +76,7 @@ public class EntryInvoiceGroupRules extends AbstractGroupRules {
     }
 }
 ```
-然后再resources/rules下面创建规则组配置文件
+然后在resources/rules下面创建规则组配置文件
 ```yaml
 group:
   name: entryInvoiceGroupRules
@@ -89,5 +95,6 @@ private RulesEngine rulesEngine;
 
 AdvFacts facts = new AdvFacts();
 //往facts里塞参数
+facts.put("param", "case");
 this.rulesEngine.fire(entryInvoiceGroupRules.getRules(), facts);
 ```
