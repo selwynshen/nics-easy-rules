@@ -4,9 +4,9 @@
  */
 package nics.easy.rules.spring.listener;
 
-import cn.mmy.nics.rules.api.Facts;
-import cn.mmy.nics.rules.api.Rule;
-import cn.mmy.nics.rules.core.DefaultRuleListener;
+import com.github.selwynshen.nics.rules.api.Facts;
+import com.github.selwynshen.nics.rules.api.Rule;
+import com.github.selwynshen.nics.rules.core.DefaultRuleListener;
 
 import static nics.easy.rules.spring.util.Constants.FACTS_END_KEY;
 

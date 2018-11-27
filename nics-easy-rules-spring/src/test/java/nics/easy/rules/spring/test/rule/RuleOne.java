@@ -5,7 +5,7 @@
 package nics.easy.rules.spring.test.rule;
 
 import nics.easy.rules.spring.rule.AbstractSimpleRule;
-import cn.mmy.nics.rules.annotation.Rule;
+import com.github.selwynshen.nics.rules.annotation.Rule;
 
 /**
  * @author Selwyn

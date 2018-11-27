@@ -4,7 +4,7 @@
  */
 package nics.easy.rules.spring.rule;
 
-import cn.mmy.nics.rules.api.Prioritized;
+import com.github.selwynshen.nics.rules.api.Prioritized;
 
 /**
  * @author Selwyn

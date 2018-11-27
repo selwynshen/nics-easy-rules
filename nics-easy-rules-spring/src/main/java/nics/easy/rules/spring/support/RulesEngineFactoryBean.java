@@ -5,8 +5,8 @@
 package nics.easy.rules.spring.support;
 
 import nics.easy.rules.spring.listener.EndRuleListener;
-import cn.mmy.nics.rules.api.RulesEngine;
-import cn.mmy.nics.rules.core.DefaultRulesEngine;
+import com.github.selwynshen.nics.rules.api.RulesEngine;
+import com.github.selwynshen.nics.rules.core.DefaultRulesEngine;
 import org.springframework.beans.factory.FactoryBean;
 
 /**

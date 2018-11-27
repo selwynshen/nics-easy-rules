@@ -4,7 +4,7 @@
  */
 package nics.easy.rules.spring.facts;
 
-import cn.mmy.nics.rules.api.Facts;
+import com.github.selwynshen.nics.rules.api.Facts;
 
 import static nics.easy.rules.spring.util.Constants.*;
 

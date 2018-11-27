@@ -4,9 +4,9 @@
  */
 package nics.easy.rules.spring.rule;
 
-import cn.mmy.nics.rules.annotation.Action;
-import cn.mmy.nics.rules.annotation.Condition;
-import cn.mmy.nics.rules.annotation.Fact;
+import com.github.selwynshen.nics.rules.annotation.Action;
+import com.github.selwynshen.nics.rules.annotation.Condition;
+import com.github.selwynshen.nics.rules.annotation.Fact;
 
 import static nics.easy.rules.spring.util.Constants.FACTS_PARAM_KEY;
 

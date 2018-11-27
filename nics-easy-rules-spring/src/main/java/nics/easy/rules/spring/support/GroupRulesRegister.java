@@ -4,7 +4,7 @@
  */
 package nics.easy.rules.spring.support;
 
-import cn.mmy.nics.rules.api.Prioritized;
+import com.github.selwynshen.nics.rules.api.Prioritized;
 import nics.easy.rules.spring.definition.GroupDefinition;
 import nics.easy.rules.spring.definition.RuleDefinition;
 import nics.easy.rules.spring.group.AbstractGroupRules;

@@ -4,9 +4,9 @@
  */
 package nics.easy.rules.spring.group;
 
-import cn.mmy.nics.rules.api.AdvRules;
+import com.github.selwynshen.nics.rules.api.AdvRules;
 import lombok.Getter;
-import cn.mmy.nics.rules.api.Rules;
+import com.github.selwynshen.nics.rules.api.Rules;
 import org.springframework.beans.factory.InitializingBean;
 
 /**
