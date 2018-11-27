@@ -1,0 +1,7 @@
+group:
+  name: groupRules2
+  rules:
+    - name: ruleOne
+      priority: 2
+    - name: ruleTwo
+      priority: 3
