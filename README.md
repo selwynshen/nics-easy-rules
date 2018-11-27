@@ -1,9 +1,9 @@
-##Nics Easy Rules  简易规则引擎（基于easy-rules）
-
+# Nics Easy Rules  简易规则引擎（基于easy-rules）
+一个简单的规则引擎工具，适合判断条件比较多的项目使用，尤其是那种如果满足条件，则会执行一堆业务逻辑或者校验很频繁的业务场景。
 
 ## 项目依赖
 ```xml
-<!--mybatis-->
+<!--nics-easy-rules-->
 <dependency>
     <groupId>cn.mmy</groupId>
     <artifactId>nics-easy-rules-spring</artifactId>
