@@ -43,8 +43,8 @@
 
     <scm>
         <url>https://github.com/selwynshen/nics-easy-rules</url>
-        <connection>https://github.com/selwynshen/nics-easy-rules.git</connection>
-        <developerConnection>https://github.com/selwynshen</developerConnection>
+        <connection>scm:git:https://github.com/selwynshen/nics-easy-rules.git</connection>
+        <developerConnection>scm:git:https://github.com/selwynshen</developerConnection>
     </scm>
 
     <developers>
@@ -91,7 +91,7 @@
         </dependencies>
     </dependencyManagement>
 
-    <distributionManagement>
+    <!--<distributionManagement>
         <repository>
             <id>sonatype-oss</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
@@ -100,7 +100,7 @@
             <id>sonatype-oss</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </snapshotRepository>
-    </distributionManagement>
+    </distributionManagement>-->
 
     <build>
         <pluginManagement>

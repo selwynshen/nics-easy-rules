@@ -19,7 +19,7 @@
 ```xml
 <!--nics-easy-rules-->
 <dependency>
-    <groupId>com.github.selwynshen</groupId>
+    <groupId>cn.mmy</groupId>
     <artifactId>nics-easy-rules-spring</artifactId>
     <version>1.0</version>
 </dependency>
