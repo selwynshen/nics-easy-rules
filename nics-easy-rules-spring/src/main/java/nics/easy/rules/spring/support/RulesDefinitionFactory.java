@@ -12,11 +12,9 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
-import java.io.FileReader;
+import java.io.InputStreamReader;
 import java.io.Reader;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -69,7 +67,9 @@ public class RulesDefinitionFactory implements InitializingBean{
             Reader tempReader;
             for (Resource resource : resources)
             {
-                tempReader = new FileReader(resource.getFile());
+                //bug fix：修复spring boot jar包无法读取规则配置文件的bug 20190128
+                tempReader = new InputStreamReader(resource.getInputStream(), "utf-8");
+                //tempReader = new FileReader(resource.getFile());
                 GroupsDefinition groupsDefinition =
                         this.rulesReader.read(tempReader);
                 if (groupsDefinition != null && groupsDefinition.getGroup() != null) {
