@@ -6,11 +6,11 @@
 	<parent>
 		<groupId>com.github.selwynshen</groupId>
 		<artifactId>nics-easy-rules</artifactId>
-		<version>1.0</version>
+		<version>1.1</version>
 	</parent>
 
 	<artifactId>nics-easy-rules-spring</artifactId>
-	<version>1.0</version>
+	<version>1.1</version>
 	<packaging>jar</packaging>
 
 	<name>nics-easy-rules-spring</name>
