@@ -4,13 +4,13 @@
  */
 package nics.easy.rules.spring.test;
 
+import com.github.selwynshen.nics.rules.api.AdvRules;
+import com.github.selwynshen.nics.rules.api.RulesEngine;
+import com.github.selwynshen.nics.rules.core.DefaultRulesEngine;
 import nics.easy.rules.spring.definition.GroupsDefinition;
 import nics.easy.rules.spring.facts.AdvFacts;
 import nics.easy.rules.spring.test.rule.RuleOne;
 import nics.easy.rules.spring.test.rule.RuleTwo;
-import com.github.selwynshen.nics.rules.api.AdvRules;
-import com.github.selwynshen.nics.rules.api.RulesEngine;
-import com.github.selwynshen.nics.rules.core.DefaultRulesEngine;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.core.io.Resource;
@@ -18,10 +18,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.util.ResourceUtils;
 import org.yaml.snakeyaml.Yaml;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileReader;
-import java.io.InputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -92,7 +89,8 @@ public class PriorityTest {
         List<GroupsDefinition> groupsList = new ArrayList<>();
         for (Resource resource : resources)
         {
-            FileReader reader = new FileReader(resource.getFile());
+            //FileReader reader = new FileReader(resource.getFile());
+            Reader reader = new InputStreamReader(resource.getInputStream(), "utf-8");
             GroupsDefinition groups = yaml.loadAs(reader, GroupsDefinition.class);
             groupsList.add(groups);
         }

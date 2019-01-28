@@ -12,6 +12,14 @@ public class Constants {
 
     public static final String FACTS_PARAM_KEY = "param";
 
+    /**
+     * 规则全部中止 key
+     */
     public static final String FACTS_END_KEY = "end";
+
+    /**
+     * 规则跳过 key
+     */
+    public static final String FACTS_SKIP_KEY = "skip";
 
 }
