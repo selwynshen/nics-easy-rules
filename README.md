@@ -12,7 +12,7 @@
 - 规则可复用，优先级可修改
 - 引入规则组概念
 - 增加基类，初步封装
-- 同组规则可进行中断
+- 同组规则可进行中断或者跳过后续某个规则的执行
 - mvel的语法覆盖面还是不够广，因此摒弃，采用java代码实现业务，yml实现规则组灵活配置的形式
 
 ## 项目依赖
@@ -21,7 +21,7 @@
 <dependency>
     <groupId>com.github.selwynshen</groupId>
     <artifactId>nics-easy-rules-spring</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 </dependency>
 ```
 ## nics-easy-rules 配置(spring boot项目)
@@ -113,7 +113,7 @@ facts.put("param", "case");
 this.rulesEngine.fire(entryInvoiceGroupRules.getRules(), facts);
 ```
 ## 更新日志
-01/29/2019
+01/29/2019 (v1.1)
 1. 修复spring boot项目jar包执行时无法读取规则文件的bug
 2. 新增跳过指定规则的listener
 3. 规则引擎factory bean改成多例的
