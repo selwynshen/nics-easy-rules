@@ -33,7 +33,8 @@ public class EasyRulesConfigurer {
     @Bean
     RulesEngineFactoryBean rulesEngineFactoryBean()
     {
-        return new RulesEngineFactoryBean();
+        //return new RulesEngineFactoryBean();
+        return new ProtoRulesEngineFactoryBean();
     }
 
     @Bean
@@ -74,6 +75,8 @@ public class OrgNotExistRule extends AbstractRule {
         System.out.println("机构信息不全，报问题件");
         //结束后续规则的校验
         facts.putEnd(true);
+        //跳过某个规则类的执行
+        facts.put(Constants.FACTS_SKIP_KEY, SocCatelogNotExistRule.class);
     }
 }
 ```
@@ -109,3 +112,8 @@ AdvFacts facts = new AdvFacts();
 facts.put("param", "case");
 this.rulesEngine.fire(entryInvoiceGroupRules.getRules(), facts);
 ```
+## 更新日志
+01/29/2019
+1. 修复spring boot项目jar包执行时无法读取规则文件的bug
+2. 新增跳过指定规则的listener
+3. 规则引擎factory bean改成多例的
