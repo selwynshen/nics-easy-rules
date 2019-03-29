@@ -112,6 +112,9 @@ AdvFacts facts = new AdvFacts();
 facts.put("param", "case");
 this.rulesEngine.fire(entryInvoiceGroupRules.getRules(), facts);
 ```
+## 案例
+[源码](https://github.com/selwynshen/nics-easy-rules-showcase)
+
 ## 更新日志
 01/29/2019 (v1.1)
 1. 修复spring boot项目jar包执行时无法读取规则文件的bug
